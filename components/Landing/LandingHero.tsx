@@ -14,10 +14,11 @@ function LandingHero() {
           <span className="text-primary">Content Creation</span>
         </h1>
         <p className="mt-5 max-w-140 text-lg leading-relaxed text-muted-foreground lg:mt-7 lg:text-2xl">
-          Manage ideas, track content and generate AI-powered content from a single workspace.
+          Manage ideas, track content and generate AI-powered content from a
+          single workspace.
         </p>
-
-        <div className="mt-6 flex flex-col gap-3 md:hidden">
+        {/* TODO */}
+        {/* <div className="mt-6 flex flex-col gap-3 md:hidden">
           <Button className="h-14 rounded-md text-base font-bold shadow-brand hover:bg-brand-700">
             Get Started
           </Button>
@@ -27,7 +28,7 @@ function LandingHero() {
           >
             Demo
           </Button>
-        </div>
+        </div> */}
       </div>
 
       <LandingBrowserMockup />
