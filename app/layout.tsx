@@ -15,9 +15,73 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Crevia - Creator Operating System",
+  metadataBase: new URL("https://crevia.netlify.app"),
+
+  title: {
+    default: "Crevia — AI-Powered Creator Operating System",
+    template: "%s | Crevia",
+  },
+
   description:
-    "Plan, create, and publish content faster with Crevia, an AI-powered creator operating system.",
+    "Manage ideas, track content workflows and generate AI-powered content from a single workspace. Built for creators, YouTubers and content professionals.",
+
+  keywords: [
+    "creator operating system",
+    "content management",
+    "content workflow",
+    "AI content creation",
+    "AI captions",
+    "content planning",
+    "creator tools",
+    "YouTube creator tools",
+    "Instagram creator tools",
+    "content productivity",
+    "creator dashboard",
+    "Crevia",
+  ],
+
+  authors: [{ name: "Prashant Nath" }],
+  creator: "Prashant Nath",
+  publisher: "Crevia",
+
+  openGraph: {
+    title: "Crevia — AI-Powered Creator Operating System",
+    description:
+      "Manage ideas, track content workflows and generate AI-powered content from a single workspace.",
+    url: "https://crevia.netlify.app",
+    siteName: "Crevia",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Crevia",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Crevia — AI-Powered Creator Operating System",
+    description:
+      "Manage ideas, track content workflows and generate AI-powered content from a single workspace.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
