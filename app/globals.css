@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-heading: var(--font-display);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-brand: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-600: var(--brand-600);
+  --color-brand-500: var(--brand-500);
+  --color-brand-200: var(--brand-200);
+  --color-brand-100: var(--brand-100);
+  --color-brand-50: var(--brand-50);
+
+  --color-ink-900: var(--ink-900);
+  --color-ink-700: var(--ink-700);
+  --color-ink-500: var(--ink-500);
+  --color-ink-400: var(--ink-400);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+
+  --shadow-card: var(--sh-sm);
+  --shadow-pop: var(--sh-md);
+  --shadow-modal: var(--sh-lg);
+  --shadow-brand: var(--sh-brand);
+}
+
+:root {
+  --radius: 0.625rem;
+
+  --brand-700: #C2410C;
+  --brand-600: #EA580C;
+  --brand-500: #F97316;
+  --brand-200: #FED7AA;
+  --brand-100: #FFEDD5;
+  --brand-50: #FFF7ED;
+
+  --bg: #F3F4F6;
+  --surface: #FFFFFF;
+  --ink-900: #111827;
+  --ink-700: #374151;
+  --ink-500: #6B7280;
+  --ink-400: #9CA3AF;
+  --line: #E5E7EB;
+  --line-soft: #F1F2F4;
+
+  --sh-sm: 0 1px 2px rgba(17, 24, 39, .04), 0 1px 3px rgba(17, 24, 39, .06);
+  --sh-md: 0 4px 14px rgba(17, 24, 39, .06), 0 2px 6px rgba(17, 24, 39, .04);
+  --sh-lg: 0 12px 32px rgba(17, 24, 39, .10), 0 4px 10px rgba(17, 24, 39, .05);
+  --sh-brand: 0 6px 18px rgba(234, 88, 12, .30);
+
+  --background: var(--bg);
+  --foreground: var(--ink-900);
+  --card: var(--surface);
+  --card-foreground: var(--ink-900);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink-900);
+  --primary: var(--brand-600);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--bg);
+  --secondary-foreground: var(--ink-700);
+  --muted: var(--bg);
+  --muted-foreground: var(--ink-500);
+  --accent: var(--brand-50);
+  --accent-foreground: var(--brand-700);
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--brand-600);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  html {
+    @apply font-sans;
+  }
+}
