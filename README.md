@@ -18,7 +18,7 @@ A modern landing page for **Crevia** — an AI-powered creator operating system 
 
 ## Status
 
-🚧 Currently in active development.
+🚧 Currently in active development. (https://github.com/prashant00797/crevia-main)
 
 ---
 
